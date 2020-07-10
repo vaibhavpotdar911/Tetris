@@ -186,5 +186,4 @@ class BoardData(object):
         self.currentShape = Shape()
         self.backBoard = [0] * BoardData.width * BoardData.height
 
-
 GAME_BOARD = BoardData()

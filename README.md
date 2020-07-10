@@ -13,5 +13,5 @@ Modules required: python3, NumPy, PyQt5
 * `UP` key to rotate the shape.
 * `LEFT` key to move the piece left.
 * `RIGHT` key to move the piece right.
-* `SPACE` key to make the piece fall right away.
+* `DOWN` key to make the piece fall right away.
 * `P` key to Pause the game.

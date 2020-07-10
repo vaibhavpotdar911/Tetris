@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 
 import sys, random
 from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
@@ -127,7 +126,7 @@ class Tetris(QMainWindow):
             GAME_BOARD.moveRight()
         elif key == Qt.Key_Up:
             GAME_BOARD.rotateLeft()
-        elif key == Qt.Key_Space:
+        elif key == Qt.Key_Down:
             self.tboard.score += GAME_BOARD.dropDown()
         else:
             super(Tetris, self).keyPressEvent(event)
