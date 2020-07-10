@@ -136,8 +136,8 @@ class Tetris(QMainWindow):
 
 
 def drawSquare(painter, x, y, val, s):
-    colorTable = [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
-                  0xCCCC66, 0xCC66CC, 0x66CCCC, 0xDAAA00]
+    colorTable = [0x000000, 0xEE6666, 0x66EE66, 0x6666EE,
+                  0xEEEE66, 0xEE66EE, 0x66EEEE, 0xDAAA00]
 
     if val == 0:
         return
@@ -204,7 +204,7 @@ class Board(QFrame):
 
         painter.setPen(QColor(0x777777))
         painter.drawLine(self.width()-1, 0, self.width()-1, self.height())
-        painter.setPen(QColor(0xCCCCCC))
+        painter.setPen(QColor(0xEEEEEE))
         painter.drawLine(self.width(), 0, self.width(), self.height())
 
     def updateData(self):
